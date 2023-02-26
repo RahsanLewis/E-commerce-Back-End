@@ -1,6 +1,6 @@
 # E-commerce-Back-End
-[repo link](https://github.com/RahsanLewis/E-commerce-Back-End)
-[video-link]()
+* [repo link](https://github.com/RahsanLewis/E-commerce-Back-End)
+* [video-link]()
 
 ## Description
 This is a back-end application for an e-commerce company that allows users to view, add, update, and delete categories, products, and tags for the products. The application uses a MySQL database and is built using Node.js and the Sequelize ORM.
