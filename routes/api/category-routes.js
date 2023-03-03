@@ -1,5 +1,5 @@
-import express from 'express';
-import { Category, Product } from '../../models';
+const express = require('express')
+const { Category, Product } = require('../../models');
 
 const router = express.Router();
 
@@ -10,6 +10,7 @@ router.get('/', async (req, res) => {
     });
     res.status(200).json(categoryData);
   } catch (err) {
+    console.error(err)
     res.status(400).json(err);
   }
 });
@@ -75,4 +76,4 @@ router.delete('/:id', async (req, res) => {
   }
 });
 
-export default router;
+module.exports =  router;

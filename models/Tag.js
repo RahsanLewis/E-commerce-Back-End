@@ -1,7 +1,7 @@
-import { Model, DataTypes } from 'sequelize';
-import sequelize from '../config/connection';
+const { Model, DataTypes } =require('sequelize');
+const sequelize =require('../config/connection.js');
 
-export default class Tag extends Model {}
+class Tag extends Model {}
 
 Tag.init({
   id: {
@@ -20,3 +20,5 @@ Tag.init({
   underscored: true,
   modelName: 'tag',
 });
+
+module.exports = Tag;

@@ -1,7 +1,7 @@
-import { Model, DataTypes } from 'sequelize';
-import sequelize from '../config/connection';
+const { Model, DataTypes } =require('sequelize');
+const sequelize =require('../config/connection.js');
 
-export default class Product extends Model {}
+class Product extends Model {}
 
 Product.init({
   id: {
@@ -43,3 +43,5 @@ Product.init({
   underscored: true,
   modelName: 'product',
 });
+
+module.exports = Product;

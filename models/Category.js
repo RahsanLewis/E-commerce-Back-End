@@ -1,7 +1,7 @@
-import { Model, DataTypes } from 'sequelize';
-import sequelize from '../config/connection.js';
+const { Model, DataTypes } =require('sequelize');
+const sequelize =require('../config/connection.js');
 
-export default class Category extends Model {}
+class Category extends Model {}
 
 Category.init({
   id: {
@@ -21,3 +21,5 @@ Category.init({
   underscored: true,
   modelName: 'category',
 });
+
+module.exports = Category;
